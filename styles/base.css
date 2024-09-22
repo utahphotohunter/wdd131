@@ -1,0 +1,187 @@
+/* CSS for student home page WDD131 */
+
+/* variables */
+
+:root {
+    --primary-color: #48BEFF;
+    --secondary-color: #F09D51;
+    --secondary-color-clear: #F09D5190;
+    --accent-color: #3c293c;
+    --accent-color-2: #F06543;
+    --text-default: black;
+}
+
+/* global styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* utilities */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.basic-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.basic-heading {
+    color: white;
+    text-shadow: var(--accent-color) 1px 1px;
+}
+
+p {
+    color: var(--text-default);
+    font-size: large;
+}
+
+
+/* heading */
+
+#main-heading {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+
+#navbar {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#navbar li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+#navbar li:hover {
+    background-color: var(--accent-color-2);
+}
+
+
+
+/* main body */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* about section */
+
+#about {
+    grid-column: 1/4;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+/* about mitch */
+
+#about-me {
+    padding: 10px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mitch-img {
+    width: 100%;
+    text-align: center;
+}
+
+#mitch-img img {
+    width: 80%;
+}
+
+/* about country */
+
+#origin {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: var(--accent-color) dotted 2px;
+    margin-top: 10px;
+}
+
+#flag {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag img {
+    width: 60%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#country h2 {
+    padding: 10px;
+}
+
+/* resources */
+
+#resources {
+    grid-column: 4/6;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin: 20px 10px 20px 0;
+}
+
+#resources h2 {
+    padding: 10px;
+}
+
+#resources ul {
+    text-align: left;
+}
+
+#resources li {
+    padding: 3px;
+    font-size: larger;
+}
+
+#resources a {
+    color: var(--accent-color);
+    padding: 5px;
+}
+
+#resources a:hover {
+    color: var(--accent-color-2);
+}
