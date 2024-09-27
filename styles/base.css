@@ -20,6 +20,11 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* utilities */
 
 a {
