@@ -154,6 +154,10 @@ main {
     align-items: center;
 }
 
+#flag p {
+    font-size: small;
+}
+
 #flag img {
     width: 60%;
     text-align: center;
