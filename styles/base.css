@@ -3,12 +3,12 @@
 /* variables */
 
 :root {
-    --primary-color: #48BEFF;
-    --secondary-color: #F09D51;
-    --secondary-color-clear: #F09D5190;
+    --primary-color: #e6a785;
+    --secondary-color: #74d59f;
+    --secondary-color-clear: #7fffb990;
     --accent-color: #3c293c;
     --accent-color-2: #F06543;
-    --text-default: black;
+    --text-default: rgb(22, 22, 22);
 }
 
 /* global styling */
@@ -41,7 +41,7 @@ a:hover {
 
 .basic-heading {
     color: white;
-    text-shadow: var(--accent-color) 1px 1px;
+    text-shadow: rgb(128, 124, 124) 1px 1px;
 }
 
 p {
@@ -83,6 +83,10 @@ p {
     background-color: var(--accent-color-2);
 }
 
+#navbar a {
+    color: white;
+}
+
 
 
 /* main body */
@@ -104,7 +108,7 @@ main {
 /* about mitch */
 
 #about-me {
-    padding: 10px;
+    padding: 15px 10px;
     gap: 20px;
     border-radius: 20px;
 }
@@ -121,7 +125,7 @@ main {
 }
 
 #mitch-img img {
-    width: 80%;
+    width: 70%;
 }
 
 /* about country */
@@ -184,4 +188,10 @@ main {
 
 #resources a:hover {
     color: var(--accent-color-2);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--secondary-color);
 }
