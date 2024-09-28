@@ -1,7 +1,7 @@
  
 /* variables */
 
-@media (min-width: 820px) {
+@media (min-width: 822px) {
 
 
 
@@ -96,6 +96,7 @@
     main h1 {
         text-align: center;
         padding: 40px;
+        line-height: 2.3rem;
     }
 
     main h2 {

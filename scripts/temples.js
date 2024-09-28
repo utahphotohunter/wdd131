@@ -3,7 +3,7 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".mobile-menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
     const body = document.getElementById("html");
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const span = document.querySelector("#currentYear")
     let date = document.lastModified;
     const currentDate = new Date(date);
-    footer.textContent = currentDate;
+    footer.textContent = "Last Modified: " + currentDate;
     let currentYear = currentDate.getFullYear();
     span.textContent = currentYear;
 
-});
+// });
