@@ -114,23 +114,7 @@
         align-items: center;
         padding: 0 40px;
      }
-     
-
-     /* #desktop-navbar ul {
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-         height: 100%;
-     }
-
-     #desktop-navbar a {
-         font-size: x-large;
-         height: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding: 0 40px;
-     } */
+    
 
 
      /* body */
@@ -149,6 +133,13 @@
      main h1 {
          text-align: center;
          padding: 40px;
+     }
+
+     main h2 {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        width: 50%;
      }
 
 
