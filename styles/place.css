@@ -1,1 +1,63 @@
-/* this is a comment */
+/* variables */
+
+:root {
+    --primary-color: #FF0000;
+    --primary-color-clear: #FF000090;
+    --secondary-color: #FFFFFF;
+    --secondary-color-clear: #FFFFFF90;
+    --accent-color: #0000ff;
+    --accent-color-clear: #0000ff90;
+    --accent-color-2: #000000;
+    --accent-color-2-clear: #00000090;
+}
+
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* utilities */
+
+body{
+    max-width: 820px;
+}
+
+.container {
+    padding: 5px, 15px;
+    overflow: auto;
+    margin: auto;
+}
+
+.primary-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.secondary-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.accent-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-color-2);
+}
+
+.normal-text {
+    font-size: 1rem;
+    color: var(--accent-color-2);
+}
+
+
+
+/* header */
+

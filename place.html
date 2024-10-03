@@ -8,10 +8,59 @@
     <meta name="author" content="Mitchel Hunter">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"crel="stylesheet">
     <script src="scripts/place.js" defer></script>
     <title>Favorite Place</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1 class="primary-text">United States of America</h1>
+        </div>
+    </header>
     
+    <main>
+        <section class="main-section">
+            <div class="container">
+                <img id="small-img" src="images/road-small.webp" alt="Winding road through red mountains.">
+                <img id="medium-img" src="images/road-medium.webp" alt="Winding road through red mountains.">
+                <img id="large-img" src="images/road-large.webp" alt="Winding road through red mountains.">
+            </div>
+            <article class="container data-article">
+                <div class="container data-header">
+                    <h2 class="secondary-text">Data</h2>
+                </div>
+                <div class="container data-content">
+                    <p class="normal-text"><span class="accent-text">Area:</span> 3.79mil sq mi</p>
+                    <p class="normal-text"><span class="accent-text">Population:</span> 333.29mil</p>
+                    <p class="normal-text"><span class="accent-text">Capital:</span> Washington DC</p>
+                    <p class="normal-text"><span class="accent-text">Languages:</span> English, Spanish</p>
+                    <p class="normal-text"><span class="accent-text">Currency:</span> US Dollar</p>
+                    <p class="normal-text"><span class="accent-text">Timezones:</span> UTC-10 thru UTC-4</p>
+                    <p class="normal-text"><span class="accent-text">Calling Code:</span> +1</p>
+                    <p class="normal-text"><span class="accent-text">Internet TLD:</span> .us</p>
+                </div>
+            </article>
+            <article class="container weather-article">
+                <div class="container weather-header">
+                    <h2 class="secondary-text">Weather</h2>
+                </div>
+                <div class="container weather-content">
+                    <p class="normal-text"><span class="accent-text">Temperature:</span> 69&deg;F</p>
+                    <p class="normal-text"><span class="accent-text">Conditions:</span> Partly Cloudy</p>
+                    <p class="normal-text"><span class="accent-text">Wind:</span> 8 mph</p>
+                    <p class="normal-text"><span class="accent-text">Wind Chill:</span> --wind chill js goes here--&deg;F</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="normal-text" id="copyright">&copy;</p>
+            <p class="normal-text" id="last-modified"></p>
+        </div>
+    </footer>
 </body>
 </html>
