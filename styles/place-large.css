@@ -154,8 +154,7 @@ main {
     }
 
     .weather-article .weather-header img {
-        width: 12%;
-        margin-top: 0;
+        display: none;
     }
 
 
