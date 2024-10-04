@@ -15,7 +15,7 @@
     <title>Favorite Place</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <h1 class="primary-text">United States of America</h1>
         </div>
@@ -23,7 +23,7 @@
     
     <main>
         <section class="main-section">
-            <div class="container">
+            <div class="container img-div">
                 <img id="small-img" src="images/road-small.webp" alt="Winding road through red mountains.">
                 <img id="medium-img" src="images/road-medium.webp" alt="Winding road through red mountains.">
                 <img id="large-img" src="images/road-large.webp" alt="Winding road through red mountains.">
@@ -46,19 +46,20 @@
             <article class="container weather-article">
                 <div class="container weather-header">
                     <h2 class="secondary-text">Weather</h2>
+                    <img src="images/sunny-clouds.svg" alt="Weather Icon">
                 </div>
                 <div class="container weather-content">
                     <p class="normal-text"><span class="accent-text">Temperature:</span> 69&deg;F</p>
                     <p class="normal-text"><span class="accent-text">Conditions:</span> Partly Cloudy</p>
                     <p class="normal-text"><span class="accent-text">Wind:</span> 8 mph</p>
-                    <p class="normal-text"><span class="accent-text">Wind Chill:</span> --wind chill js goes here--&deg;F</p>
+                    <p class="normal-text" id="wind-chill-p"><span class="accent-text">Wind Chill:</span><span id="wind-chill"></span>&deg;F</p>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p class="normal-text" id="copyright">&copy;</p>
+    <footer class="footer">
+        <div class="container footer-div">
+            <p class="normal-text">&copy;<span id="copyright"></span> | Mitchel Hunter | United States</p>
             <p class="normal-text" id="last-modified"></p>
         </div>
     </footer>
