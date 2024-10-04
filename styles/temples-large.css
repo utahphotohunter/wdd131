@@ -79,6 +79,14 @@
         padding: 0 40px;
     }
 
+    /* header title */
+
+    header h1 {
+        text-align: center;
+        padding: 40px;
+        line-height: 2.3rem;
+    }
+
 
     /* body */
 
