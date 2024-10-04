@@ -7,7 +7,7 @@ const date = new Date(lastModified);
 let currentYear = date.getFullYear();
 
 copyright.textContent = currentYear;
-modified.textContent = "Last Modified" + lastModified;
+modified.textContent = "Last Modified: " + lastModified;
 
 
 const windChill = document.querySelector("#wind-chill");
