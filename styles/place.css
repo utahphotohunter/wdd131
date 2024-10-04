@@ -173,4 +173,8 @@ html {
     color: var(--secondary-color);
 }
 
+.footer #author-credit::after {
+    content: " | Mitchel Hunter | United States";
+}
+
 }
