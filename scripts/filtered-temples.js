@@ -1,6 +1,12 @@
 const toggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 const body = document.getElementById("html");
+const oldBtn = document.querySelector(".old");
+const newBtn = document.querySelector(".new");
+const largeBtn = document.querySelector(".large");
+const smallBtn = document.querySelector(".small");
+const homeBtn = document.querySelector(".home");
+
 toggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
 });
@@ -93,8 +99,8 @@ const temples = [
 
 
 
-function createTempleCard() {
-  temples.forEach(temple => {
+function createTempleCard(list) {
+  list.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
@@ -106,7 +112,7 @@ function createTempleCard() {
     location.innerHTML = `<span class="info">Location: </span> ${temple.location}`;
     dedication.innerHTML = `<span class="info">Dedication: </span> ${temple.dedicated}`;
     area.innerHTML = `<span class="info">Area: </span> ${temple.area} sq ft`;
-    img.setAttribute("scr", temple.imageUrl);
+    img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
 
@@ -116,11 +122,38 @@ function createTempleCard() {
     card.appendChild(area);
     card.appendChild(img);
 
-document.querySelector(".temples").appendChild(card);
+  document.querySelector(".temples").appendChild(card);
 });
 }
 
-createTempleCard();
+createTempleCard(temples);
+
+
+homeBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples);
+});
+
+oldBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] < 1900));
+});
+
+newBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] > 2000));
+});
+
+largeBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area > 90000))
+});
+
+smallBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area < 10000))
+});
+
 
 
 
