@@ -1,11 +1,16 @@
 const toggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 const body = document.getElementById("html");
-const oldBtn = document.querySelector(".old");
-const newBtn = document.querySelector(".new");
-const largeBtn = document.querySelector(".large");
-const smallBtn = document.querySelector(".small");
-const homeBtn = document.querySelector(".home");
+const oldBtn = document.querySelector("#old");
+const oldBtnMobile = document.getElementById("old-mobile");
+const newBtn = document.querySelector("#new");
+const newBtnMobile = document.getElementById("new-mobile");
+const largeBtn = document.querySelector("#large");
+const largeBtnMobile = document.getElementById("large-mobile");
+const smallBtn = document.querySelector("#small");
+const smallBtnMobile = document.getElementById("small-mobile");
+const homeBtn = document.querySelector("#home");
+const homeBtnMobile = document.getElementById("home-mobile");
 
 toggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
@@ -134,7 +139,17 @@ homeBtn.addEventListener("click", () => {
   createTempleCard(temples);
 });
 
+homeBtnMobile.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples);
+});
+
 oldBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] < 1900));
+});
+
+oldBtnMobile.addEventListener("click", () => {
   document.querySelector(".temples").innerHTML = "";
   createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] < 1900));
 });
@@ -144,7 +159,17 @@ newBtn.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] > 2000));
 });
 
+newBtnMobile.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.dedicated.split(",")[0] > 2000));
+});
+
 largeBtn.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area > 90000))
+});
+
+largeBtnMobile.addEventListener("click", () => {
   document.querySelector(".temples").innerHTML = "";
   createTempleCard(temples.filter(temple => temple.area > 90000))
 });
@@ -153,6 +178,13 @@ smallBtn.addEventListener("click", () => {
   document.querySelector(".temples").innerHTML = "";
   createTempleCard(temples.filter(temple => temple.area < 10000))
 });
+
+smallBtnMobile.addEventListener("click", () => {
+  document.querySelector(".temples").innerHTML = "";
+  createTempleCard(temples.filter(temple => temple.area < 10000))
+});
+
+
 
 
 

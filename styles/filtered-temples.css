@@ -151,6 +151,7 @@
      .temples {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
+         margin: 25px 10px;
      }
 
      @media (max-width: 720px) {
@@ -180,6 +181,7 @@
          text-align: center;
          padding: 20px;
          background-color: #c0bfbf90;
+         border: #575757 1px solid;
      }
 
      .info {
