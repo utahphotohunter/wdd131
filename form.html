@@ -12,17 +12,19 @@
 </head>
 <body>
     <header>
-
+        <div class="container">
+            <h1 class="primary-text">Product Review</h1>
+        </div>
     </header>
     <main>
-        <section>
-            <form action="review.html" method="get">
-                <label for="product">Product Name</label>
+        <section class="container">
+            <form action="review.html" method="get" class="flex">
+                <label for="product" class="secondary-text">Product Name</label>
                 <select name="product" id="product">
                     <option value="no-selection" disabled selected>Choose a Product...</option>
                 </select>
-                <div>
-                    <p>Overall Rating</p>
+                <div class="container">
+                    <p class="secondary-text">Overall Rating</p>
                     <label for="1">1.&rpar;</label>
                     <input type="radio" id="1" name="rating" value="1" required>
                     <label for="2">2.&rpar;</label>
@@ -34,13 +36,13 @@
                     <label for="5">5.&rpar;</label>
                     <input type="radio" id="5" name="rating" value="5" required>
                 </div>
-                <div>
-                    <label for="date">Date Installed:</label>
+                <div class="container flex">
+                    <label for="date" class="secondary-text">Date Installed:</label>
                     <input type="date" name="date" id="date" required>
                 </div>
-                <div>
-                    <p>Which features did you find useful in the product?</p>
-                    <p>&lpar;select all that apply&rpar;</p>
+                <div class="container flex">
+                    <p class="secondary-text">Which features did you find useful in the product?<br>
+                        <span class="span-text">&lpar;select all that apply&rpar;</span></p>
                     <label for="durability">Durability</label>
                     <input type="checkbox" id="durability" name="durability" value="durability">
                     <label for="ease-of-use">Ease of Use</label>
@@ -50,23 +52,25 @@
                     <label for="design">Design</label>
                     <input type="checkbox" id="design" name="design" value="design">
                 </div>
-                <div>
-                    <label for="written-review">Written Review <span>&lpar;optional&rpar;</span></label>
+                <div class="container flex">
+                    <label for="written-review" class="secondary-text">Written Review <span class="span-text">&lpar;optional&rpar;</span></label>
                     <textarea name="written-review" id="written-review" placeholder="Review the product here..."></textarea>
                 </div>
-                <div>
-                    <label for="user-name">Your Name: <span>&lpar;optional&rpar;</span></label>
+                <div class="container flex">
+                    <label for="user-name" class="secondary-text">Your Name: <span class="span-text">&lpar;optional&rpar;</span></label>
                     <input type="text" id="user-name" name="user-name" placeholder="your name here">
                 </div>
-                <div>
+                <div class="container submit">
                     <input type="submit" name="submit" id="submit" value="Post Review">
                 </div>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentYear"></span> | Mitchel Hunter | United States</p>
-        <p id="lastModified"></p>
+        <div class="container">
+            <p>&copy;<span id="currentYear"></span> | Mitchel Hunter | United States</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 </html>
