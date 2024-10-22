@@ -23,7 +23,7 @@
                 <select name="product" id="product">
                     <option value="no-selection" disabled selected>Choose a Product...</option>
                 </select>
-                <div class="container">
+                <div class="container rating">
                     <p class="secondary-text">Overall Rating</p>
                     <label for="1">1.&rpar;</label>
                     <input type="radio" id="1" name="rating" value="1" required>
@@ -38,27 +38,37 @@
                 </div>
                 <div class="container flex">
                     <label for="date" class="secondary-text">Date Installed:</label>
-                    <input type="date" name="date" id="date" required>
+                    <input type="date" name="date" id="date" class="input-box" required>
                 </div>
                 <div class="container flex">
                     <p class="secondary-text">Which features did you find useful in the product?<br>
                         <span class="span-text">&lpar;select all that apply&rpar;</span></p>
-                    <label for="durability">Durability</label>
-                    <input type="checkbox" id="durability" name="durability" value="durability">
-                    <label for="ease-of-use">Ease of Use</label>
-                    <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
-                    <label for="performance">Performance</label>
-                    <input type="checkbox" id="performance" name="performance" value="performance">
-                    <label for="design">Design</label>
-                    <input type="checkbox" id="design" name="design" value="design">
+                    <div class="flex features">
+                        <div class="flex-row">
+                            <label for="durability">Durability</label>
+                            <input type="checkbox" id="durability" name="durability" value="durability">
+                        </div>
+                        <div class="flex-row">
+                            <label for="ease-of-use">Ease of Use</label>
+                            <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
+                        </div>
+                        <div class="flex-row">
+                            <label for="performance">Performance</label>
+                            <input type="checkbox" id="performance" name="performance" value="performance">
+                        </div>
+                        <div class="flex-row">
+                            <label for="design">Design</label>
+                            <input type="checkbox" id="design" name="design" value="design">
+                        </div>
+                    </div>
                 </div>
-                <div class="container flex">
+                <div class="container flex written-review">
                     <label for="written-review" class="secondary-text">Written Review <span class="span-text">&lpar;optional&rpar;</span></label>
-                    <textarea name="written-review" id="written-review" placeholder="Review the product here..."></textarea>
+                    <textarea name="written-review" id="written-review" placeholder="Review the product here..." class="input-box"></textarea>
                 </div>
-                <div class="container flex">
+                <div class="container flex written-review">
                     <label for="user-name" class="secondary-text">Your Name: <span class="span-text">&lpar;optional&rpar;</span></label>
-                    <input type="text" id="user-name" name="user-name" placeholder="your name here">
+                    <input type="text" id="user-name" name="user-name" placeholder="Enter your name here" class="input-box">
                 </div>
                 <div class="container submit">
                     <input type="submit" name="submit" id="submit" value="Post Review">

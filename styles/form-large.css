@@ -1,0 +1,47 @@
+@media (min-width: 821px) {
+
+/* global */
+
+body {
+    max-width: 1200px;
+}
+
+/* page */
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    padding-left: 25px;
+}
+
+.rating input {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.written-review {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.written-review textarea {
+    height: 100px;
+}
+
+.written-review input {
+    width: 50%;
+}
+
+
+}
