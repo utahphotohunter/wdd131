@@ -43,5 +43,14 @@ header {
     width: 50%;
 }
 
+.submit {
+    margin: 40px;
+}
+
+.submit input {
+    width: 200px;
+    height: 50px;
+}
+
 
 }
