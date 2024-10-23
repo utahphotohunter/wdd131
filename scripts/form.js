@@ -1,15 +1,3 @@
-// footer inserts
-
-const footer = document.querySelector("#lastModified");
-const span = document.querySelector("#currentYear");
-let date = document.lastModified;
-const currentDate = new Date(date);
-footer.textContent = "Last Modified: " + currentDate;
-let currentYear = currentDate.getFullYear();
-span.textContent = currentYear;
-
-
-
 // product drop down menu 
 
 // list of products
@@ -54,3 +42,12 @@ products.forEach(product => {
 
 
 
+// footer inserts
+
+const footer = document.querySelector("#lastModified");
+const span = document.querySelector("#currentYear");
+let date = document.lastModified;
+const currentDate = new Date(date);
+footer.textContent = "Last Modified: " + currentDate;
+let currentYear = currentDate.getFullYear();
+span.textContent = currentYear;
